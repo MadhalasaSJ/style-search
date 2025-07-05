@@ -9,23 +9,21 @@ StyleSearch is a machine learning-powered visual search tool that helps users fi
 1. Make sure Python **3.8+** is installed.
 
 2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
 
-```bash
-pip install -r requirements.txt
+## Launch the Streamlit app:
 
+   * streamlit run app.py
 
-Launch the Streamlit app:
+## ✅ Ensure the following folders are present alongside the code:
 
-```bash
-streamlit run app.py
+   - data/ (e.g., metadata CSVs)
 
-- ✅ Ensure the following folders are present alongside the code:
+   - embeddings/ (precomputed image embeddings)
 
--- data/ (e.g., metadata CSVs)
+   - images/ (downloaded fashion images)
 
--- embeddings/ (precomputed image embeddings)
-
--- images/ (downloaded fashion images)
 
 ## 💡 About the Project
 
@@ -41,18 +39,28 @@ streamlit run app.py
 
 ## 🗂️ Project Structure
 
-```bash
 .
 ├── app.py                  # Main Streamlit app
+
 ├── generate_embeddings.py  # Embedding generator using MobileNet
+
 ├── search_engine.py        # Cosine similarity-based search logic
+
 ├── download_images.py      # Utility to download product images
+
 ├── utils.py                # Helper functions
+
 ├── data/                   # Metadata files
+
 ├── embeddings/             # Image embeddings
+
 ├── images/                 # Downloaded product images
+
 ├── requirements.txt
+
 └── README.md
+
+
 
 
 ## ✨ Highlights
