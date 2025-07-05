@@ -39,7 +39,6 @@ StyleSearch is a machine learning-powered visual search tool that helps users fi
 
 ## 🗂️ Project Structure
 
-.
 ├── app.py                  # Main Streamlit app
 
 ├── generate_embeddings.py  # Embedding generator using MobileNet
